@@ -20,6 +20,12 @@ export async function getProps(resolvedUrl) {
 		magnoliaContext,
 	};
 	// Fetching page content
+	console.log(
+		'Fetching page content from: ' +
+			pagesApi +
+			magnoliaContext.nodePath +
+			magnoliaContext.search
+	);
 	const pagesRes = await fetch(
 		pagesApi + magnoliaContext.nodePath + magnoliaContext.search
 	);
