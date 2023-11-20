@@ -1,6 +1,6 @@
 import { EditorContextHelper } from '@magnolia/react-editor';
 
-export const NEXT_PUBLIC_MGNL_HOST = process.env.NEXT_PUBLIC_MGNL_HOST;
+export const NEXT_PUBLIC_MGNL_HOST = `${process.env.NEXT_PUBLIC_MGNL_HOST}/magnoliaAuthor`;
 export const languages = 'en de'.split(' ');
 export const nodeName = process.env.NEXT_APP_MGNL_SITE_PATH;
 
